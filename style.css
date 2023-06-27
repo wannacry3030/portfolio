@@ -80,7 +80,7 @@ a:hover {
 }
 #top {
   min-height: 100vh;
-  background: url("assets/nordWallpaper.jpeg") no-repeat fixed;
+  background: url("assets/nordWallpaper.webp") no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
