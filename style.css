@@ -80,10 +80,10 @@ a:hover {
 }
 #top {
   min-height: 100vh;
-  background: url("assets/nordWallpaper.webp") no-repeat fixed;
+  /* background: url("assets/nordWallpaper.webp") no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
+  -o-background-size: cover; */
   background-size: cover;
   background-position: 50%;
   display: flex;
@@ -91,9 +91,21 @@ a:hover {
   justify-content: center;
   align-items: center;
   padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
 }
+#video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 #top .logo {
   text-align: center;
+  position: relative;
 }
 #top .logo img {
   width: 150px;
