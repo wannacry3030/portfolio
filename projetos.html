@@ -9,9 +9,33 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
-    />
+    /> <script
+    src="https://kit.fontawesome.com/9142ebd931.js"
+    crossorigin="anonymous"
+  ></script>
     <title>Projetos</title>
     <style>
+      .whatsapp {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #1d2b64;
+        z-index: 100;
+      }
+      .whatsapp:hover {
+        background-color: #fff;
+        color: #25d366;
+      }
+      .my-float {
+        margin-top: 16px;
+      }
       body {
         margin: 0;
         padding: 0;
@@ -76,7 +100,14 @@
   </head>
 
   <body>
-    
+    <a
+    aria-label="icone do whatsapp, converse conosco e tire duvidas"
+    href="https://wa.me/+5561998059243?"
+    class="whatsapp"
+    target="_blank"
+  >
+    <i class="fa fa-whatsapp my-float"></i>
+  </a>
     <button id="language-toggle" onclick="toggleLanguage()">
       <img alt="" />
     </button>

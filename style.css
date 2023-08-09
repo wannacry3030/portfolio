@@ -4,7 +4,7 @@
   height: 60px;
   bottom: 40px;
   right: 40px;
-  background-color: #378f57;
+  background-color: #25d366;
   color: #fff;
   border-radius: 50px;
   text-align: center;
@@ -19,7 +19,6 @@
 .my-float {
   margin-top: 16px;
 }
-
 body {
   font-family: "Inter";
   margin: 0;
