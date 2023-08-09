@@ -12,12 +12,23 @@
     />
     <title>Projetos</title>
     <style>
-      body{
-         background-color: #1f1e21;
-  font-family: "inter", sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  color: #ffffff;
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        background-color: #1f1e21;
+        font-family: "inter", sans-serif;
+        line-height: 1;
+        font-weight: 400;
+        color: #ffffff;
+      }
+      #language-toggle {
+        position: absolute;
+        top: 20px;
+        margin-bottom: 20px; /* Espaçamento inferior */
       }
       .cards {
         display: grid;
@@ -58,6 +69,11 @@
   </head>
 
   <body>
+    
+    <button id="language-toggle" onclick="toggleLanguage()">
+      <img src="assets/usa-flag.png" alt="USA Flag" />
+    </button>
+
     <div class="cards">
       <a href="https://wannacry3030.github.io/Omnifood/" target="_blank">
       <article class="card">
@@ -122,5 +138,15 @@
         </div>
       </article></a>
     </div>
+    <script>
+      function toggleLanguage() {
+        var currentUrl = window.location.href;
+        if (currentUrl.includes("projetos-en.html")) {
+          window.location.href = currentUrl.replace("projetos-en.html", "projetos.html");
+        } else {
+          window.location.href = currentUrl.replace("projetos.html", "projetos-en.html");
+        }
+      }
+    </script>
   </body>
 </html>
