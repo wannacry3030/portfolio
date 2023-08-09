@@ -108,9 +108,9 @@
   >
     <i class="fa fa-whatsapp my-float"></i>
   </a>
-    <button id="language-toggle" onclick="toggleLanguage()">
-      <img alt="" />
-    </button>
+  <button id="language-toggle" onclick="toggleLanguage()">
+    <img alt="" />
+  </button>
 
     <div class="cards">
       <a href="https://wannacry3030.github.io/Omnifood/" target="_blank">
@@ -178,12 +178,7 @@
     </div>
     <script>
       function toggleLanguage() {
-        var currentUrl = window.location.href;
-        if (currentUrl.includes("/projects.html")) {
-          window.location.href = currentUrl.replace("/projects.html", "/projetos.html");
-        } else {
-          window.location.href = currentUrl.replace("/projetos.html", "/projects.html");
-        }
+        window.location.href = "/projects.html";
       }
     </script>
   </body>
